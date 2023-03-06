@@ -10,31 +10,26 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
   </head>
   <body>
     <div class="card align-self-center" style="width: 18rem" id="content-card">
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-outline-primary" id="btnEngland">
-          England
+        <button type="button" class="btn btn-outline-secondary" id="btnEngland">
+          <a href="/leagues/England">England</a>
         </button>
         <button type="button" class="btn btn-outline-secondary" id="btnSpain">
-          Spain
+          <a href="/leagues/Spain">Spain</a>
         </button>
-        <button type="button" class="btn btn-outline-success" id="btnGermany">
-          Germany
+        <button type="button" class="btn btn-outline-secondary" id="btnGermany">
+          <a href="/leagues/Germany">Germany</a>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="<%=lgEntries.logo%>" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title" id="leagueName">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title" id="leagueName"><%=lgEntries.league%></h5>
         </div>
       </div>
     </div>
@@ -43,6 +38,5 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
   </body>
 </html>
