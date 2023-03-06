@@ -1,0 +1,4 @@
+.git
+.gitignore
+node-kube-deploy.yml
+node-kube-service.yml
